@@ -1,60 +1,77 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - [Jouw Naam]</title>
+    <title>Portfolio - Pepijn Van Ootegem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>[Jouw Naam]</h1>
-        <p>Welkom op mijn portfolio website!</p>
-    </header>
-    <nav>
-        <a href="#over-mij">Over mij</a>
-        <a href="#projecten">Projecten</a>
-        <a href="#contact">Contact</a>
+    <button class="nav-toggle" aria-label="Show navigation" onclick="toggleNav()">☰</button>
+    <nav id="sidebar">
+        <a href="#about-me" aria-current="page">🏠 Home</a>
+        <a href="projecten.html">💻 Projects</a>
+        <a href="contact.html">✉️ Contact</a>
     </nav>
-    <section id="over-mij">
-        <h2>Over mij</h2>
-        <p>
-            Hallo! Ik ben [Jouw Naam], een [jouw beroep of studie, bv. webontwikkelaar/student] uit [jouw woonplaats]. 
-            Ik heb een passie voor [jouw interesses, bv. webdevelopment, design, technologie, ...].
-            <br><br>
-            In mijn vrije tijd houd ik van [je hobby's].
-        </p>
-    </section>
-    <section id="projecten">
-        <h2>Projecten</h2>
-        <div class="projecten">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Korte omschrijving van je project. Wat was de uitdaging? Wat heb je geleerd?</p>
-                <a href="#" target="_blank">Bekijk project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Korte omschrijving van een ander project.</p>
-                <a href="#" target="_blank">Bekijk project</a>
-            </div>
-            <!-- Voeg meer projecten toe indien gewenst -->
+    <header>
+        <img src="./images/me.jpeg" alt="Profile photo of Pepijn Van Ootegem" class="profile-photo">
+        <div class="header-content">
+            <h1>Pepijn Van Ootegem</h1>
+            <p>Welcome to my portfolio website!</p>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="mailto:jou@email.com" method="POST" enctype="text/plain">
-            <label for="naam">Naam:</label><br>
-            <input type="text" id="naam" name="naam" required><br><br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="bericht">Bericht:</label><br>
-            <textarea id="bericht" name="bericht" rows="4" required></textarea><br><br>
-            <button type="submit">Verstuur</button>
-        </form>
-    </section>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Pepijn Van Ootegem, a student in Applied Computer Science with a specialization in Mainframe Expertise at HOGENT University of Applied Sciences. 
+                I have a strong interest in PL/I, DB2, and MQ technologies.
+                <br><br>
+                Outside of my academic pursuits, I enjoy staying active through running and cycling. 
+                These hobbies help me maintain a clear mind and balanced lifestyle, 
+                which I believe also contributes to my focus and perseverance in my studies and projects.
+            </p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Mainframe middleware & frameworks intern | Euroclear</h3>
+            <p>February 2025 - May 2025</p>
+            <ul>
+                <li>Developed and optimized PL/I and Java applications</li>
+                <li>Designed and implemented a test environment</li>
+                <li>Executed performance tests to analyze the difference between the languages</li>
+                <li>Developed applications that interact with MQ and DB2</li>
+            </ul>
+            <h3>Work-based Learning | Euroclear</h3>
+            <p>October 2025 - December 2025</p>
+            <ul>
+                <li>Gained in-depth knowledge of mainframe systems in business context</li>
+                <li>Learned about key technologies such as MQ, CICS and Db2</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <h3>Applied Computer Sciences | Hogent University of Applied Sciences</h3>
+            <p>2022 - 2025</p>
+            <ul>
+                <li>Major: Mainframe expert</li>
+                <li>Minor: Computer Networks, CCSA, ML</li>
+            </ul>
+            <h3>Accountancy & IT | Sint-lienvenscollege business</h3>
+            <p>2016-2022</p>
+            <ul>
+                <li>Major: Informatics, Business Economics, and Mathematics</li>
+                <li>Minor: Literature, physics, history</li>
+                <li>Graduated: Magna Cum Laude</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        &copy; 2025 [Jouw Naam]. Gemaakt met ❤️
+        <div class="footer-meta">
+            &copy; 2025 Pepijn Van Ootegem
+        </div>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

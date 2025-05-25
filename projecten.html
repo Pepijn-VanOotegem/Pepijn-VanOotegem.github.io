@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Pepijn Van Ootegem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="nav-toggle" aria-label="Show navigation" onclick="toggleNav()">☰</button>
+    <nav id="sidebar">
+        <a href="index.html#about-me">🏠 Home</a>
+        <a href="projecten.html" aria-current="page">💻 Projects</a>
+        <a href="contact.html">✉️ Contact</a>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Pepijn Van Ootegem</h1>
+            <p>My projects</p>
+        </div>
+
+    </header>
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projecten">
+                <div class="project">
+                    <h3>Rest API</h3>
+                    <p>
+                        Built a simple REST API using JavaScript to deepen my understanding of RESTful architecture. 
+                        The project included creating endpoints for basic CRUD operations and handling JSON data to simulate real-world API behavior.
+                    </p>
+                    <a href="https://github.com/Pepijn-VanOotegem/Event-api" target="_blank">View project</a>
+                </div>
+                <div class="project">
+                    <h3>Site for Rest API</h3>
+                    <p>
+                        Created a web application that consumes a REST API to display real-time parking availability in the city of Ghent. 
+                        The project helped me understand how to fetch and present live data using JavaScript, 
+                        and how to work with external APIs to build interactive, data-driven user interfaces.
+                    </p>
+                    <a href="https://github.com/Pepijn-VanOotegem/ParkeergarageAPIGent/" target="_blank">View project</a>
+                </div>
+                <div class="project">
+                    <h3>ML model</h3>
+                    <p>
+                        Developed a small machine learning model to predict outcomes of UEFA European Championship (EURO) matches. 
+                        The project involved data scraping, cleaning and preprocessing, followed by training a predictive model to analyze historical match data. 
+                        This helped me gain hands-on experience with the full ML pipeline, from raw data to prediction.
+                    </p>
+                    <a href="https://github.com/Pepijn-VanOotegem/EKProject" target="_blank">View project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div style="text-align:center; color:#b0b0b0; margin-top:1rem;">
+            &copy; 2025 Pepijn Van Ootegem
+        </div>
+    </footer>
+</body>
+</html>
