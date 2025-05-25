@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - [Jouw Naam]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>[Jouw Naam]</h1>
+        <p>Welkom op mijn portfolio website!</p>
+    </header>
+    <nav>
+        <a href="#over-mij">Over mij</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="over-mij">
+        <h2>Over mij</h2>
+        <p>
+            Hallo! Ik ben [Jouw Naam], een [jouw beroep of studie, bv. webontwikkelaar/student] uit [jouw woonplaats]. 
+            Ik heb een passie voor [jouw interesses, bv. webdevelopment, design, technologie, ...].
+            <br><br>
+            In mijn vrije tijd houd ik van [je hobby's].
+        </p>
+    </section>
+    <section id="projecten">
+        <h2>Projecten</h2>
+        <div class="projecten">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Korte omschrijving van je project. Wat was de uitdaging? Wat heb je geleerd?</p>
+                <a href="#" target="_blank">Bekijk project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Korte omschrijving van een ander project.</p>
+                <a href="#" target="_blank">Bekijk project</a>
+            </div>
+            <!-- Voeg meer projecten toe indien gewenst -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:jou@email.com" method="POST" enctype="text/plain">
+            <label for="naam">Naam:</label><br>
+            <input type="text" id="naam" name="naam" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="bericht">Bericht:</label><br>
+            <textarea id="bericht" name="bericht" rows="4" required></textarea><br><br>
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2025 [Jouw Naam]. Gemaakt met ❤️
+    </footer>
+</body>
+</html>
